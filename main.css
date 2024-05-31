@@ -1,0 +1,80 @@
+
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    text-align: center;
+    color: rgb(219, 42, 219);
+}
+
+nav {
+    text-align: center;
+    padding: 20px;
+}
+nav ul li {
+    display: inline;
+    margin-right: 100px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #980974;
+}
+
+.home-button {
+    background-color: #3416c9; /* Green */
+    color: white;
+    transition: transform 0.5s ease-in-out;
+}
+
+.home-button:hover {
+    transform: rotate(180deg);
+}
+
+.info-button {
+    background-color: #358518; /* Blue */
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.info-button:hover {
+    transform: scale(1.1);
+}
+
+.contact-button {
+    background-color: #f44336; /* Red */
+    color: white;
+    animation: contact-animation 3s infinite;
+}
+
+@keyframes contact-animation {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.animated-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    background-color: pink;
+    color: rgb(241, 40, 40);
+    font-size: 24px;
+    border-radius: 10px;
+    animation: animated-box 3s infinite;
+}
+
+@keyframes animated-box {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
